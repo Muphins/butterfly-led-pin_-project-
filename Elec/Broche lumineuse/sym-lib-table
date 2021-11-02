@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Broche-lumineuse-rescue)(type Legacy)(uri "${KIPRJMOD}/Broche lumineuse-rescue.lib")(options "")(descr ""))
+)
