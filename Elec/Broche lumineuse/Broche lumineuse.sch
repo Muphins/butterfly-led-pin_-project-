@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Broche-lumineuse-rescue:ATtiny85V-10MU-MCU_Microchip_ATtiny U1
+L MCU_Microchip_ATtiny:ATtiny85V-10MU U1
 U 1 1 5E80B510
 P 2200 4500
 F 0 "U1" H 2000 3900 50  0000 R CNN
@@ -36,7 +36,7 @@ F 3 "" H 5350 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:MCP1700-2502E_SOT23-Regulator_Linear U3
+L Regulator_Linear:MCP1700-2502E_SOT23 U3
 U 1 1 5E817A7A
 P 9850 2050
 F 0 "U3" H 9850 2292 50  0000 C CNN
@@ -47,7 +47,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 9850 2050 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:BQ297xy-Battery_Management U7
+L Battery_Management:BQ297xy U7
 U 1 1 5E8185D5
 P 6450 2350
 F 0 "U7" H 6450 2717 50  0000 C CNN
@@ -58,7 +58,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 6200 2550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:MCP73831-2-OT-Battery_Management U4
+L Battery_Management:MCP73831-2-OT U4
 U 1 1 5E819190
 P 2300 2050
 F 0 "U4" H 1950 2500 50  0000 C CNN
@@ -70,7 +70,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2150 2000 
 $EndComp
 Text GLabel 3150 4200 2    50   UnSpc ~ 0
 SDA
-Text GLabel 3150 4400 2    50   Output ~ 0
+Text GLabel 3150 4300 2    50   Output ~ 0
 SCL
 Wire Wire Line
 	3150 4200 3000 4200
@@ -85,7 +85,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 4600 2800 4600
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0101
+L power:GND #PWR0101
 U 1 1 5F90316F
 P 2200 5250
 F 0 "#PWR0101" H 2200 5000 50  0001 C CNN
@@ -96,7 +96,7 @@ F 3 "" H 2200 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0102
+L power:+2V5 #PWR0102
 U 1 1 5F90349D
 P 2200 3750
 F 0 "#PWR0102" H 2200 3600 50  0001 C CNN
@@ -113,80 +113,7 @@ Wire Wire Line
 Text Notes 9400 4500 0    50   ~ 0
 SK6805\n1515
 $Comp
-L Broche-lumineuse-rescue:SN74LVC1T45DBV-Logic_LevelTranslator U6
-U 1 1 5E8092B5
-P 7250 4900
-F 0 "U6" H 7300 4500 50  0000 L CNN
-F 1 "SN74LVC1T45DBV" H 7300 4400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7250 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 6350 4250 50  0001 C CNN
-	1    7250 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Broche-lumineuse-rescue:GND-power #PWR0103
-U 1 1 5F90669E
-P 7250 5450
-F 0 "#PWR0103" H 7250 5200 50  0001 C CNN
-F 1 "GND" H 7255 5277 50  0000 C CNN
-F 2 "" H 7250 5450 50  0001 C CNN
-F 3 "" H 7250 5450 50  0001 C CNN
-	1    7250 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0104
-U 1 1 5F906C91
-P 7150 4350
-F 0 "#PWR0104" H 7150 4200 50  0001 C CNN
-F 1 "+2V5" H 7165 4523 50  0000 C CNN
-F 2 "" H 7150 4350 50  0001 C CNN
-F 3 "" H 7150 4350 50  0001 C CNN
-	1    7150 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0105
-U 1 1 5F906E6E
-P 7350 4350
-F 0 "#PWR0105" H 7350 4200 50  0001 C CNN
-F 1 "+BATT" H 7365 4523 50  0000 C CNN
-F 2 "" H 7350 4350 50  0001 C CNN
-F 3 "" H 7350 4350 50  0001 C CNN
-	1    7350 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0106
-U 1 1 5F90705B
-P 6700 4350
-F 0 "#PWR0106" H 6700 4200 50  0001 C CNN
-F 1 "+2V5" H 6715 4523 50  0000 C CNN
-F 2 "" H 6700 4350 50  0001 C CNN
-F 3 "" H 6700 4350 50  0001 C CNN
-	1    6700 4350
-	1    0    0    -1  
-$EndComp
-Text GLabel 6550 4900 0    50   Input ~ 0
-LED_CMD
-Text GLabel 7750 4900 2    50   Output ~ 0
-LED_INPUT
-Wire Wire Line
-	7650 4900 7750 4900
-Wire Wire Line
-	7350 4350 7350 4500
-Wire Wire Line
-	7150 4350 7150 4500
-Wire Wire Line
-	6700 4350 6700 5100
-Wire Wire Line
-	6700 5100 6850 5100
-Wire Wire Line
-	6850 4900 6550 4900
-Wire Wire Line
-	7250 5300 7250 5450
-$Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0107
+L power:+2V5 #PWR0107
 U 1 1 5F908328
 P 4500 5650
 F 0 "#PWR0107" H 4500 5500 50  0001 C CNN
@@ -197,7 +124,7 @@ F 3 "" H 4500 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0108
+L power:GND #PWR0108
 U 1 1 5F908535
 P 4550 6900
 F 0 "#PWR0108" H 4550 6650 50  0001 C CNN
@@ -234,7 +161,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 6850 4550 6850
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0109
+L power:+BATT #PWR0109
 U 1 1 5F90A08C
 P 9250 1750
 F 0 "#PWR0109" H 9250 1600 50  0001 C CNN
@@ -245,7 +172,7 @@ F 3 "" H 9250 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0110
+L power:+2V5 #PWR0110
 U 1 1 5F90A2E0
 P 10500 1750
 F 0 "#PWR0110" H 10500 1600 50  0001 C CNN
@@ -256,7 +183,7 @@ F 3 "" H 10500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0111
+L power:GND #PWR0111
 U 1 1 5F90A534
 P 9850 2500
 F 0 "#PWR0111" H 9850 2250 50  0001 C CNN
@@ -277,7 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	9850 2350 9850 2500
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0112
+L power:GND #PWR0112
 U 1 1 5F90F5F7
 P 5000 3150
 F 0 "#PWR0112" H 5000 2900 50  0001 C CNN
@@ -288,7 +215,7 @@ F 3 "" H 5000 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0113
+L power:+BATT #PWR0113
 U 1 1 5F90F9D0
 P 7300 1450
 F 0 "#PWR0113" H 7300 1300 50  0001 C CNN
@@ -299,7 +226,7 @@ F 3 "" H 7300 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:-BATT-power #PWR0114
+L power:-BATT #PWR0114
 U 1 1 5F910071
 P 6450 3150
 F 0 "#PWR0114" H 6450 3000 50  0001 C CNN
@@ -314,7 +241,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 2250 5450 2250
 $Comp
-L Broche-lumineuse-rescue:R-Device R5
+L Device:R R5
 U 1 1 5F916FE8
 P 7300 1900
 F 0 "R5" H 7370 1946 50  0000 L CNN
@@ -325,7 +252,7 @@ F 3 "~" H 7300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R6
+L Device:R R6
 U 1 1 5F917270
 P 7000 2800
 F 0 "R6" H 7070 2846 50  0000 L CNN
@@ -336,7 +263,7 @@ F 3 "~" H 7000 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0115
+L power:GND #PWR0115
 U 1 1 5F91BFB7
 P 7000 3150
 F 0 "#PWR0115" H 7000 2900 50  0001 C CNN
@@ -353,7 +280,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 2950 7000 3150
 $Comp
-L Broche-lumineuse-rescue:-BATT-power #PWR0116
+L power:-BATT #PWR0116
 U 1 1 5F91E688
 P 7300 3150
 F 0 "#PWR0116" H 7300 3000 50  0001 C CNN
@@ -370,7 +297,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1450 7300 1750
 $Comp
-L Broche-lumineuse-rescue:C-Device C7
+L Device:C C7
 U 1 1 5F921269
 P 7300 2550
 F 0 "C7" H 7415 2596 50  0000 L CNN
@@ -386,7 +313,7 @@ Connection ~ 7300 2250
 Wire Wire Line
 	7300 2700 7300 3150
 $Comp
-L Broche-lumineuse-rescue:LED-Device D1
+L Device:LED D1
 U 1 1 5F9249DD
 P 3150 1550
 F 0 "D1" V 3189 1433 50  0000 R CNN
@@ -397,7 +324,7 @@ F 3 "~" H 3150 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R3
+L Device:R R3
 U 1 1 5F925999
 P 3150 1950
 F 0 "R3" H 3220 1996 50  0000 L CNN
@@ -408,7 +335,7 @@ F 3 "~" H 3150 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R4
+L Device:R R4
 U 1 1 5F925FD4
 P 1800 2400
 F 0 "R4" H 1870 2446 50  0000 L CNN
@@ -419,7 +346,7 @@ F 3 "~" H 1800 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:C-Device C1
+L Device:C C1
 U 1 1 5F9261C8
 P 2800 2400
 F 0 "C1" H 2915 2446 50  0000 L CNN
@@ -430,7 +357,7 @@ F 3 "~" H 2800 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0117
+L power:GND #PWR0117
 U 1 1 5F92682F
 P 2300 2650
 F 0 "#PWR0117" H 2300 2400 50  0001 C CNN
@@ -441,7 +368,7 @@ F 3 "" H 2300 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0118
+L power:+BATT #PWR0118
 U 1 1 5F926BF0
 P 2800 1300
 F 0 "#PWR0118" H 2800 1150 50  0001 C CNN
@@ -452,7 +379,7 @@ F 3 "" H 2800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:VBUS-power #PWR0119
+L power:VBUS #PWR0119
 U 1 1 5F9274F3
 P 2300 1300
 F 0 "#PWR0119" H 2300 1150 50  0001 C CNN
@@ -471,7 +398,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 2350 2300 2650
 $Comp
-L Broche-lumineuse-rescue:VBUS-power #PWR0120
+L power:VBUS #PWR0120
 U 1 1 5F92B193
 P 3150 1300
 F 0 "#PWR0120" H 3150 1150 50  0001 C CNN
@@ -496,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2550 1800 2650
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0121
+L power:GND #PWR0121
 U 1 1 5F9312B8
 P 1800 2650
 F 0 "#PWR0121" H 1800 2400 50  0001 C CNN
@@ -507,7 +434,7 @@ F 3 "" H 1800 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0122
+L power:GND #PWR0122
 U 1 1 5F931A50
 P 2800 2650
 F 0 "#PWR0122" H 2800 2400 50  0001 C CNN
@@ -523,7 +450,7 @@ Wire Wire Line
 	2800 2250 2800 1950
 Connection ~ 2800 1950
 $Comp
-L Broche-lumineuse-rescue:R-Device R2
+L Device:R R2
 U 1 1 5F93D00D
 P 3750 5900
 F 0 "R2" H 3450 5950 50  0000 L CNN
@@ -534,7 +461,7 @@ F 3 "~" H 3750 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R1
+L Device:R R1
 U 1 1 5F93D722
 P 3900 5900
 F 0 "R1" H 3970 5946 50  0000 L CNN
@@ -565,7 +492,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 5700 3750 5750
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0123
+L power:+2V5 #PWR0123
 U 1 1 5F949DA3
 P 3900 5650
 F 0 "#PWR0123" H 3900 5500 50  0001 C CNN
@@ -579,7 +506,7 @@ Wire Wire Line
 	3900 5650 3900 5700
 Connection ~ 3900 5700
 $Comp
-L Broche-lumineuse-rescue:C-Device C8
+L Device:C C8
 U 1 1 5F94BD04
 P 3850 6650
 F 0 "C8" H 3965 6696 50  0000 L CNN
@@ -590,7 +517,7 @@ F 3 "~" H 3850 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0124
+L power:GND #PWR0124
 U 1 1 5F94C54E
 P 3850 6900
 F 0 "#PWR0124" H 3850 6650 50  0001 C CNN
@@ -607,7 +534,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 6800 3850 6900
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0125
+L power:+BATT #PWR0125
 U 1 1 5F953E53
 P 8750 1750
 F 0 "#PWR0125" H 8750 1600 50  0001 C CNN
@@ -618,7 +545,7 @@ F 3 "" H 8750 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0126
+L power:GND #PWR0126
 U 1 1 5F953F53
 P 8750 2500
 F 0 "#PWR0126" H 8750 2250 50  0001 C CNN
@@ -629,7 +556,7 @@ F 3 "" H 8750 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:C-Device C4
+L Device:C C4
 U 1 1 5F954195
 P 8750 2100
 F 0 "C4" H 8865 2146 50  0000 L CNN
@@ -644,69 +571,69 @@ Wire Wire Line
 Wire Wire Line
 	8750 1950 8750 1750
 $Comp
-L Broche-lumineuse-rescue:C-Device C3
+L Device:C C3
 U 1 1 5F958138
-P 5550 6300
-F 0 "C3" H 5300 6350 50  0000 L CNN
-F 1 "4.7µF" H 5200 6250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5588 6150 50  0001 C CNN
-F 3 "~" H 5550 6300 50  0001 C CNN
-	1    5550 6300
+P 5650 6300
+F 0 "C3" H 5400 6350 50  0000 L CNN
+F 1 "4.7µF" H 5300 6250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 6150 50  0001 C CNN
+F 3 "~" H 5650 6300 50  0001 C CNN
+	1    5650 6300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:C-Device C6
+L Device:C C6
 U 1 1 5F959E5E
-P 5750 6300
-F 0 "C6" H 5865 6346 50  0000 L CNN
-F 1 "100nF" H 5865 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5788 6150 50  0001 C CNN
-F 3 "~" H 5750 6300 50  0001 C CNN
-	1    5750 6300
+P 5850 6300
+F 0 "C6" H 5965 6346 50  0000 L CNN
+F 1 "100nF" H 5965 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5888 6150 50  0001 C CNN
+F 3 "~" H 5850 6300 50  0001 C CNN
+	1    5850 6300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0127
+L power:+2V5 #PWR0127
 U 1 1 5F95ACA6
-P 5550 5700
-F 0 "#PWR0127" H 5550 5550 50  0001 C CNN
-F 1 "+2V5" H 5565 5873 50  0000 C CNN
-F 2 "" H 5550 5700 50  0001 C CNN
-F 3 "" H 5550 5700 50  0001 C CNN
-	1    5550 5700
+P 5650 5700
+F 0 "#PWR0127" H 5650 5550 50  0001 C CNN
+F 1 "+2V5" H 5665 5873 50  0000 C CNN
+F 2 "" H 5650 5700 50  0001 C CNN
+F 3 "" H 5650 5700 50  0001 C CNN
+	1    5650 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0128
+L power:GND #PWR0128
 U 1 1 5F95B49D
-P 5550 6900
-F 0 "#PWR0128" H 5550 6650 50  0001 C CNN
-F 1 "GND" H 5555 6727 50  0000 C CNN
-F 2 "" H 5550 6900 50  0001 C CNN
-F 3 "" H 5550 6900 50  0001 C CNN
-	1    5550 6900
+P 5650 6900
+F 0 "#PWR0128" H 5650 6650 50  0001 C CNN
+F 1 "GND" H 5655 6727 50  0000 C CNN
+F 2 "" H 5650 6900 50  0001 C CNN
+F 3 "" H 5650 6900 50  0001 C CNN
+	1    5650 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 5700 5550 5950
+	5650 5700 5650 5950
 Wire Wire Line
-	5550 5950 5550 6150
+	5650 5950 5650 6150
 Wire Wire Line
-	5550 5950 5750 5950
+	5650 5950 5850 5950
 Wire Wire Line
-	5750 5950 5750 6150
-Connection ~ 5550 5950
+	5850 5950 5850 6150
+Connection ~ 5650 5950
 Wire Wire Line
-	5750 6450 5750 6650
+	5850 6450 5850 6650
 Wire Wire Line
-	5750 6650 5550 6650
+	5850 6650 5650 6650
 Wire Wire Line
-	5550 6650 5550 6900
+	5650 6650 5650 6900
 Wire Wire Line
-	5550 6650 5550 6450
-Connection ~ 5550 6650
+	5650 6650 5650 6450
+Connection ~ 5650 6650
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0129
+L power:+2V5 #PWR0129
 U 1 1 5F9745D5
 P 1250 4150
 F 0 "#PWR0129" H 1250 4000 50  0001 C CNN
@@ -717,7 +644,7 @@ F 3 "" H 1250 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0130
+L power:GND #PWR0130
 U 1 1 5F97485D
 P 1250 4750
 F 0 "#PWR0130" H 1250 4500 50  0001 C CNN
@@ -728,7 +655,7 @@ F 3 "" H 1250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:C-Device C5
+L Device:C C5
 U 1 1 5F974B1F
 P 1250 4450
 F 0 "C5" H 1365 4496 50  0000 L CNN
@@ -743,7 +670,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 4300 1250 4150
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0131
+L power:+BATT #PWR0131
 U 1 1 5F97A2E0
 P 10350 4450
 F 0 "#PWR0131" H 10350 4300 50  0001 C CNN
@@ -754,7 +681,7 @@ F 3 "" H 10350 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0132
+L power:GND #PWR0132
 U 1 1 5F97A6CF
 P 10350 4950
 F 0 "#PWR0132" H 10350 4700 50  0001 C CNN
@@ -765,7 +692,7 @@ F 3 "" H 10350 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:C-Device C2
+L Device:C C2
 U 1 1 5F97AA4C
 P 10350 4700
 F 0 "C2" H 10100 4750 50  0000 L CNN
@@ -780,7 +707,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 4550 10350 4450
 $Comp
-L Broche-lumineuse-rescue:Conn_01x03-Connector_Generic J4
+L Connector_Generic:Conn_01x03 J4
 U 1 1 5F9803C3
 P 9400 4700
 F 0 "J4" H 9480 4742 50  0000 L CNN
@@ -793,7 +720,7 @@ $EndComp
 Text GLabel 8700 4700 0    50   Input ~ 0
 LED_INPUT
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0133
+L power:+BATT #PWR0133
 U 1 1 5F981407
 P 9100 4500
 F 0 "#PWR0133" H 9100 4350 50  0001 C CNN
@@ -804,45 +731,41 @@ F 3 "" H 9100 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 4800 9100 4800
-Wire Wire Line
-	9100 4800 9100 4850
-Wire Wire Line
 	9200 4600 9100 4600
 Wire Wire Line
 	9100 4600 9100 4500
 Wire Wire Line
 	8700 4700 9200 4700
 $Comp
-L Broche-lumineuse-rescue:BSS138-Transistor_FET Q1
+L Transistor_FET:BSS138 Q1
 U 1 1 5FA1771E
-P 9000 5050
-F 0 "Q1" H 9205 5096 50  0000 L CNN
-F 1 "PMV20XNEAR" H 9205 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9200 4975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9000 5050 50  0001 L CNN
-	1    9000 5050
+P 9750 5650
+F 0 "Q1" H 9955 5696 50  0000 L CNN
+F 1 "PMV20XNEAR" H 9955 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 5575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9750 5650 50  0001 L CNN
+	1    9750 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0134
+L power:GND #PWR0134
 U 1 1 5F9818B5
-P 9100 5350
-F 0 "#PWR0134" H 9100 5100 50  0001 C CNN
-F 1 "GND" H 9105 5177 50  0000 C CNN
-F 2 "" H 9100 5350 50  0001 C CNN
-F 3 "" H 9100 5350 50  0001 C CNN
-	1    9100 5350
+P 9850 6200
+F 0 "#PWR0134" H 9850 5950 50  0001 C CNN
+F 1 "GND" H 9855 6027 50  0000 C CNN
+F 2 "" H 9850 6200 50  0001 C CNN
+F 3 "" H 9850 6200 50  0001 C CNN
+	1    9850 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 5350 9100 5250
-Text GLabel 8700 5050 0    50   Input ~ 0
+	9850 6200 9850 6100
+Text GLabel 9450 5650 0    50   Input ~ 0
 LED_PWR
 Wire Wire Line
-	8700 5050 8800 5050
+	9450 5650 9500 5650
 $Comp
-L Broche-lumineuse-rescue:Conn_01x02-Connector_Generic J3
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5FA2D02F
 P 4650 1300
 F 0 "J3" H 4650 1100 50  0000 L CNN
@@ -853,7 +776,7 @@ F 3 "~" H 4650 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:Conn_01x02-Connector_Generic J2
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5FA2D664
 P 4200 1300
 F 0 "J2" H 4300 1100 50  0000 C CNN
@@ -864,7 +787,7 @@ F 3 "~" H 4200 1300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+BATT-power #PWR0135
+L power:+BATT #PWR0135
 U 1 1 5FA2DC59
 P 4450 1150
 F 0 "#PWR0135" H 4450 1000 50  0001 C CNN
@@ -875,7 +798,7 @@ F 3 "" H 4450 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:-BATT-power #PWR0136
+L power:-BATT #PWR0136
 U 1 1 5FA2E079
 P 4450 1550
 F 0 "#PWR0136" H 4450 1400 50  0001 C CNN
@@ -906,28 +829,6 @@ Wire Wire Line
 	5250 3050 5000 3050
 Wire Wire Line
 	5450 2250 5450 2750
-$Comp
-L Broche-lumineuse-rescue:DMN2215UDM-7-eec Q2
-U 1 1 5F902B6D
-P 5450 2650
-F 0 "Q2" V 6023 2650 50  0000 C CNN
-F 1 "DMN2215UDM-7" V 6200 2650 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 3150 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31176.pdf" H 5450 3250 50  0001 L CNN
-F 4 "Trans" H 5450 3350 50  0001 L CNN "category"
-F 5 "MOSFET 2N-CH 20V 2A SOT-26" H 5450 3450 50  0001 L CNN "digikey description"
-F 6 "DMN2215UDMDICT-ND" H 5450 3550 50  0001 L CNN "digikey part number"
-F 7 "yes" H 5450 3650 50  0001 L CNN "lead free"
-F 8 "55c4033ef1c0edc7" H 5450 3750 50  0001 L CNN "library id"
-F 9 "Diodes" H 5450 3850 50  0001 L CNN "manufacturer"
-F 10 "621-DMN2215UDM-7" H 5450 3950 50  0001 L CNN "mouser part number"
-F 11 "SOT-23-6" H 5450 4050 50  0001 L CNN "package"
-F 12 "yes" H 5450 4150 50  0001 L CNN "rohs"
-F 13 "150°C" H 5450 4250 50  0001 L CNN "temperature range high"
-F 14 "-55°C" H 5450 4350 50  0001 L CNN "temperature range low"
-	1    5450 2650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5650 3050 5700 3050
 Wire Wire Line
@@ -935,7 +836,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2450 5900 2700
 $Comp
-L Broche-lumineuse-rescue:DMN2215UDM-7-eec Q2
+L DMN2215UDM-7:DMN2215UDM-7 Q2
 U 2 1 5F904A36
 P 5900 2650
 F 0 "Q2" V 6473 2650 50  0000 C CNN
@@ -957,7 +858,7 @@ F 14 "-55°C" H 5900 4350 50  0001 L CNN "temperature range low"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R8
+L Device:R R8
 U 1 1 5FAB028D
 P 5000 2550
 F 0 "R8" H 5070 2596 50  0000 L CNN
@@ -968,7 +869,7 @@ F 3 "~" H 5000 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:R-Device R7
+L Device:R R7
 U 1 1 5FAB0671
 P 6200 2700
 F 0 "R7" H 6270 2746 50  0000 L CNN
@@ -997,7 +898,7 @@ Wire Wire Line
 	5000 2700 5000 3050
 Connection ~ 5000 3050
 $Comp
-L Broche-lumineuse-rescue:USB_B_Micro-Connector J1
+L Connector:USB_B_Micro J1
 U 1 1 5F95C8B1
 P 1000 1350
 F 0 "J1" H 1057 1817 50  0000 C CNN
@@ -1008,7 +909,7 @@ F 3 "~" H 1150 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0137
+L power:GND #PWR0137
 U 1 1 5F95F51C
 P 1000 1900
 F 0 "#PWR0137" H 1000 1650 50  0001 C CNN
@@ -1019,9 +920,9 @@ F 3 "" H 1000 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 1900 1000 1800
+	1000 1900 1000 1750
 $Comp
-L Broche-lumineuse-rescue:VBUS-power #PWR0138
+L power:VBUS #PWR0138
 U 1 1 5F963050
 P 1450 950
 F 0 "#PWR0138" H 1450 800 50  0001 C CNN
@@ -1036,7 +937,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 1150 1300 1150
 $Comp
-L Broche-lumineuse-rescue:Conn_01x06_Male-Connector J5
+L Connector:Conn_01x06_Male J5
 U 1 1 5F999A09
 P 4550 4450
 F 0 "J5" H 4522 4424 50  0000 R CNN
@@ -1063,9 +964,6 @@ Wire Wire Line
 	4350 4450 3000 4450
 Wire Wire Line
 	3000 4450 3000 4400
-Connection ~ 3000 4400
-Wire Wire Line
-	3000 4400 3150 4400
 Wire Wire Line
 	4350 4550 3700 4550
 Wire Wire Line
@@ -1081,7 +979,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 4750 3850 4900
 $Comp
-L Broche-lumineuse-rescue:GND-power #PWR0139
+L power:GND #PWR0139
 U 1 1 5F9B9682
 P 3850 4900
 F 0 "#PWR0139" H 3850 4650 50  0001 C CNN
@@ -1092,7 +990,7 @@ F 3 "" H 3850 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Broche-lumineuse-rescue:+2V5-power #PWR0140
+L power:+2V5 #PWR0140
 U 1 1 5F9B98DF
 P 3850 4100
 F 0 "#PWR0140" H 3850 3950 50  0001 C CNN
@@ -1115,10 +1013,156 @@ Text Label 4050 4650 0    50   ~ 0
 Text Label 4050 4750 0    50   ~ 0
 GND
 Wire Wire Line
-	900  1750 900  1800
+	3150 4300 3000 4300
+Connection ~ 3000 4300
+Text GLabel 3150 4400 2    50   Input ~ 0
+INT0
 Wire Wire Line
-	900  1800 1000 1800
-Connection ~ 1000 1800
+	3150 4400 3000 4400
+Connection ~ 3000 4400
+$Comp
+L Device:R R9
+U 1 1 5FBE898D
+P 9500 5900
+F 0 "R9" H 9570 5946 50  0000 L CNN
+F 1 "56kR" H 9570 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9430 5900 50  0001 C CNN
+F 3 "~" H 9500 5900 50  0001 C CNN
+	1    9500 5900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1000 1800 1000 1750
+	9500 6050 9500 6100
+Wire Wire Line
+	9500 6100 9850 6100
+Connection ~ 9850 6100
+Wire Wire Line
+	9850 6100 9850 5850
+Wire Wire Line
+	9500 5750 9500 5650
+Connection ~ 9500 5650
+Wire Wire Line
+	9500 5650 9550 5650
+Text GLabel 7550 4800 2    50   Output ~ 0
+LED_INPUT
+Text GLabel 6200 4800 0    50   Input ~ 0
+LED_CMD
+$Comp
+L power:+BATT #PWR0105
+U 1 1 5F906E6E
+P 6300 4350
+F 0 "#PWR0105" H 6300 4200 50  0001 C CNN
+F 1 "+BATT" H 6315 4523 50  0000 C CNN
+F 2 "" H 6300 4350 50  0001 C CNN
+F 3 "" H 6300 4350 50  0001 C CNN
+	1    6300 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9450 5350 0    50   UnSpc ~ 0
+LED_GND
+Wire Wire Line
+	9450 5350 9850 5350
+Wire Wire Line
+	9850 5350 9850 5450
+Text GLabel 8700 4800 0    50   UnSpc ~ 0
+LED_GND
+Wire Wire Line
+	8700 4800 9200 4800
+$Comp
+L SN74LV1T34:SN74LV1T34DBVR U6
+U 1 1 5FC32AD7
+P 6350 4600
+F 0 "U6" H 6850 4865 50  0000 C CNN
+F 1 "SN74LV1T34DBVR" H 6850 4774 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 6350 5000 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf?ts=1597765484533&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74LV1T34DBVR" H 6350 5100 50  0001 L CNN
+F 4 "+125°C" H 6350 5200 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 6350 5300 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 6350 5400 50  0001 L CNN "automotive"
+F 7 "IC" H 6350 5500 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 6350 5600 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 6350 5700 50  0001 L CNN "device class L2"
+F 10 "Buffers" H 6350 5800 50  0001 L CNN "device class L3"
+F 11 "IC BUF NON-INVERT 5.5V SOT23-5" H 6350 5900 50  0001 L CNN "digikey description"
+F 12 "296-37176-1-ND" H 6350 6000 50  0001 L CNN "digikey part number"
+F 13 "1.45mm" H 6350 6100 50  0001 L CNN "height"
+F 14 "SOT95P280X145-5" H 6350 6200 50  0001 L CNN "ipc land pattern name"
+F 15 "Yes" H 6350 6300 50  0001 L CNN "lead free"
+F 16 "c1c412f4dd8a201f" H 6350 6400 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 6350 6500 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 6350 6600 50  0001 L CNN "logic function desc"
+F 19 "Texas Instruments" H 6350 6700 50  0001 L CNN "manufacturer"
+F 20 "+150°C" H 6350 6800 50  0001 L CNN "max junction temp"
+F 21 "5.5V" H 6350 6900 50  0001 L CNN "max supply voltage"
+F 22 "1.6V" H 6350 7000 50  0001 L CNN "min supply voltage"
+F 23 "Buffers & Line Drivers SGL Pwr Spply Buffer GATE CMOS" H 6350 7100 50  0001 L CNN "mouser description"
+F 24 "595-SN74LV1T34DBVR" H 6350 7200 50  0001 L CNN "mouser part number"
+F 25 "10uA" H 6350 7300 50  0001 L CNN "nominal supply current"
+F 26 "1" H 6350 7400 50  0001 L CNN "number of circuits"
+F 27 "1" H 6350 7500 50  0001 L CNN "number of inputs"
+F 28 "1" H 6350 7600 50  0001 L CNN "number of outputs"
+F 29 "SOT-23-5" H 6350 7700 50  0001 L CNN "package"
+F 30 "3ns" H 6350 7800 50  0001 L CNN "propagation delay"
+F 31 "Yes" H 6350 7900 50  0001 L CNN "rohs"
+F 32 "0mm" H 6350 8000 50  0001 L CNN "standoff height"
+F 33 "+125°C" H 6350 8100 50  0001 L CNN "temperature range high"
+F 34 "-40°C" H 6350 8200 50  0001 L CNN "temperature range low"
+	1    6350 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 5000 2    50   UnSpc ~ 0
+LED_GND
+Wire Wire Line
+	7550 5000 7250 5000
+Wire Wire Line
+	7250 4800 7550 4800
+Wire Wire Line
+	6450 4600 6300 4600
+Wire Wire Line
+	6300 4600 6300 4350
+Wire Wire Line
+	6200 4800 6450 4800
+$Comp
+L DMN2215UDM-7:DMN2215UDM-7 Q2
+U 1 1 5F902B6D
+P 5450 2650
+F 0 "Q2" V 6023 2650 50  0000 C CNN
+F 1 "DMN2215UDM-7" V 6200 2650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 3150 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31176.pdf" H 5450 3250 50  0001 L CNN
+F 4 "Trans" H 5450 3350 50  0001 L CNN "category"
+F 5 "MOSFET 2N-CH 20V 2A SOT-26" H 5450 3450 50  0001 L CNN "digikey description"
+F 6 "DMN2215UDMDICT-ND" H 5450 3550 50  0001 L CNN "digikey part number"
+F 7 "yes" H 5450 3650 50  0001 L CNN "lead free"
+F 8 "55c4033ef1c0edc7" H 5450 3750 50  0001 L CNN "library id"
+F 9 "Diodes" H 5450 3850 50  0001 L CNN "manufacturer"
+F 10 "621-DMN2215UDM-7" H 5450 3950 50  0001 L CNN "mouser part number"
+F 11 "SOT-23-6" H 5450 4050 50  0001 L CNN "package"
+F 12 "yes" H 5450 4150 50  0001 L CNN "rohs"
+F 13 "150°C" H 5450 4250 50  0001 L CNN "temperature range high"
+F 14 "-55°C" H 5450 4350 50  0001 L CNN "temperature range low"
+	1    5450 2650
+	0    1    1    0   
+$EndComp
+Text GLabel 5250 6050 1    50   Output ~ 0
+INT0
+Wire Wire Line
+	5250 6050 5250 6350
+Wire Wire Line
+	5250 6350 5150 6350
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5FC876F0
+P 3200 5650
+F 0 "#PWR?" H 3200 5500 50  0001 C CNN
+F 1 "+2V5" H 3215 5823 50  0000 C CNN
+F 2 "" H 3200 5650 50  0001 C CNN
+F 3 "" H 3200 5650 50  0001 C CNN
+	1    3200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6350 3200 6350
+Wire Wire Line
+	3200 6350 3200 5650
 $EndSCHEMATC

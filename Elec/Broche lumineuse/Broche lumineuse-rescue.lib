@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# MMA8453Q-mma8453q-Broche-lumineuse-rescue
+# MMA8453Q-mma8453q
 #
-DEF MMA8453Q-mma8453q-Broche-lumineuse-rescue U 0 40 Y Y 1 F N
+DEF MMA8453Q-mma8453q U 0 40 Y Y 1 F N
 F0 "U" 450 -150 50 H V L BNN
-F1 "MMA8453Q-mma8453q-Broche-lumineuse-rescue" 450 -250 50 H V L BNN
+F1 "MMA8453Q-mma8453q" 450 -250 50 H V L BNN
 F2 "" 800 -50 50 H I C CNN
 F3 "" 800 -50 50 H I C CNN
 DRAW
