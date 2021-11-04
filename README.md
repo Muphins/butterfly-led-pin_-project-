@@ -1,10 +1,10 @@
 # butterfly-led-pin Project
 Butterfly shaped Hair-pin with RGB LEDs  
 
-This project is born when I wanted to make something special for a gift.
+This project was born out of the desire to make something special for a gift.
 
-It's a butterfly origami with LEDs stuck under the paper. An accelerometer and microcontroller allow annimations that follow the head's movement when the pin is worn.  
-It is battery powered. The initial goal was to have about 4 hours of autonomy. But with the battery I has laying around (100mAh) it lasts approximatly 1.5 hour.  
+It's a butterfly origami with LEDs stuck under the paper. An accelerometer and microcontroller allow animations that are driven by the head's movements when the pin is worn.  
+It is battery powered. The initial goal was to have about 4 hours of autonomy. But with a battery I already had (100mAh) it lasts approximatly 1.5 hour. 
 When no movement is detected it transitions itself into sleep mode and can last a little more than a month.
 
 # Sources
@@ -39,7 +39,7 @@ Second test with two LEDs and paper to test diffusion
 Mapping the LEDs on the origami  
 ![LEDs positions marked with pencil on the butterfly's wings](https://informotics.fr/images/articles/Papillon/09%20-%20Plan%20LEDs.jpg)  
   
-I drew the path for the wires and stuck double sided tape  
+I drew the path for the wires and applied double sided tape  
 ![image](https://informotics.fr/images/articles/Papillon/10%20-%20passage%20fils%20&%20adhesif.jpg)  
   
 And then placed the LEDs. Their pads are oriented to facilitate the wiring  
@@ -50,11 +50,11 @@ And then placed the LEDs. Their pads are oriented to facilitate the wiring
   
 ## Final assembly
 [Test of all the LEDs before folding (youtube)](https://informotics.fr/images/articles/Papillon/12%20-%20cablage%20wip.jpg)  
-During this test I noticed that the double sided tape diffuses the light, showing its shape though the paper:  
+During this test I noticed that the double sided tape diffuses the light, showing its shape through the paper:  
 ![we can see a bright square through the paper](https://informotics.fr/images/articles/Papillon/13%20-%20test%20diffusion.jpg)  
   
 Before folding the origami I replaced the small squares by large patches of double sided tape.
   
-[This video show the butterfly folded and battery powered (youtube)](https://www.youtube.com/watch?v=GrwUBladvCI&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=7)  
-[This one show one of the annimations : Starlights (youtube)](https://www.youtube.com/watch?v=PvSEK_88dsE&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=8)  
-[Here the annimation show the accelerometer's X and Y axes youtube)](https://www.youtube.com/watch?v=w01bJOyoW70&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=9)
+[This video shows the butterfly folded and battery powered (youtube)](https://www.youtube.com/watch?v=GrwUBladvCI&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=7)  
+[This one shows one of the animations : Starlights (youtube)](https://www.youtube.com/watch?v=PvSEK_88dsE&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=8)  
+[Here the animation shows the accelerometer's X and Y axes (youtube)](https://www.youtube.com/watch?v=w01bJOyoW70&list=PLRKnbB8N-SUT_lg6NkQAyX2fzEKrGeBuc&index=9)
